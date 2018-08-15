@@ -43,13 +43,8 @@ TEST(RuntimeTest, RunTheApplicatin) {
     {FAIL();}
     
 }
-void taska()
-{
-    int a = 0;
-    a++;
-}
+
 int main( int argc, char *argv[] ) {
     ::testing::InitGoogleMock( &argc, argv );
-    std::async(taska);
     return RUN_ALL_TESTS( );
 }
