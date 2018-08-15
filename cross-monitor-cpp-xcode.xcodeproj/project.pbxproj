@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2469450D2100BA5B009ABE34 /* application_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945072100BA5A009ABE34 /* application_client.cpp */; };
+		2469450E2100BA5B009ABE34 /* os_mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945082100BA5A009ABE34 /* os_mac.cpp */; };
+		2469451A2100BBD3009ABE34 /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945132100BBD2009ABE34 /* log.cpp */; };
+		2469451B2100BBD3009ABE34 /* os_mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945162100BBD3009ABE34 /* os_mac.cpp */; };
+		2469451C2100BBD3009ABE34 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945182100BBD3009ABE34 /* utils.cpp */; };
+		2469451F21012E95009ABE34 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2469451E21012E94009ABE34 /* main.cpp */; };
+		2469466A2101F5F5009ABE34 /* libboost_program_options-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 246946692101F5F5009ABE34 /* libboost_program_options-mt.dylib */; };
+		2469466E2101FFC7009ABE34 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2469466D2101FFC7009ABE34 /* libssl.dylib */; };
+		246946702101FFE6009ABE34 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2469466F2101FFE6009ABE34 /* libcrypto.dylib */; };
+		2469467221020046009ABE34 /* libcpprest.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2469467121020046009ABE34 /* libcpprest.dylib */; };
+		246946742102007D009ABE34 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 246946732102007C009ABE34 /* libboost_system.dylib */; };
+		24A02750210755A4008F9B2A /* libboost_log-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A0274F210755A4008F9B2A /* libboost_log-mt.dylib */; };
+		24A027712107CBA6008F9B2A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24A027702107CBA6008F9B2A /* main.cpp */; };
+		24A027752107CC43008F9B2A /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A0274D21075472008F9B2A /* libgtest.a */; };
+		24A027762107CC47008F9B2A /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A0274B21074FB8008F9B2A /* libgmock.a */; };
+		24E6B3F22108801200A20CA1 /* data.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945122100BBD2009ABE34 /* data.hpp */; };
+		24E6B3F32108801200A20CA1 /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945132100BBD2009ABE34 /* log.cpp */; };
+		24E6B3F42108801200A20CA1 /* log.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945152100BBD3009ABE34 /* log.hpp */; };
+		24E6B3F52108801200A20CA1 /* os_mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945162100BBD3009ABE34 /* os_mac.cpp */; };
+		24E6B3F62108801200A20CA1 /* os.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945172100BBD3009ABE34 /* os.hpp */; };
+		24E6B3F72108801200A20CA1 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945182100BBD3009ABE34 /* utils.cpp */; };
+		24E6B3F82108801200A20CA1 /* utils.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945142100BBD2009ABE34 /* utils.hpp */; };
+		24E6B3FA2108801200A20CA1 /* application_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945072100BA5A009ABE34 /* application_client.cpp */; };
+		24E6B3FB2108801200A20CA1 /* application.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 2469450A2100BA5A009ABE34 /* application.hpp */; };
+		24E6B3FC2108801200A20CA1 /* os_mac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945082100BA5A009ABE34 /* os_mac.cpp */; };
+		24E6B3FD2108801200A20CA1 /* os.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 246945092100BA5A009ABE34 /* os.hpp */; };
+		24E6B40121088A4800A20CA1 /* libcpprest.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B40021088A4800A20CA1 /* libcpprest.dylib */; };
+		24E6B40321088A9000A20CA1 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B40221088A9000A20CA1 /* libssl.dylib */; };
+		24E6B40521088C6300A20CA1 /* libboost_program_options-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B40421088C6200A20CA1 /* libboost_program_options-mt.dylib */; };
+		24E6B40921088C8700A20CA1 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B40821088C8700A20CA1 /* libboost_system.dylib */; };
+		24E6B40C21088D2500A20CA1 /* libboost_log-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A0274F210755A4008F9B2A /* libboost_log-mt.dylib */; };
+		24E6B40E2108902E00A20CA1 /* libssl.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B40D2108902E00A20CA1 /* libssl.1.0.0.dylib */; };
+		24E6B4102108903400A20CA1 /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B40F2108903400A20CA1 /* libcrypto.1.0.0.dylib */; };
+		24E6B412210890D100A20CA1 /* libboost_log.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B411210890D100A20CA1 /* libboost_log.a */; };
+		24E6B4132108911200A20CA1 /* libboost_log.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B40A21088CFC00A20CA1 /* libboost_log.dylib */; };
+		24E6B4192108911200A20CA1 /* libboost_log_setup-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B4142108911200A20CA1 /* libboost_log_setup-mt.a */; };
+		24E6B41A2108911200A20CA1 /* libboost_log_setup-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B4152108911200A20CA1 /* libboost_log_setup-mt.dylib */; };
+		24E6B41B2108911200A20CA1 /* libboost_log_setup.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B4162108911200A20CA1 /* libboost_log_setup.dylib */; };
+		24E6B41C2108911200A20CA1 /* libboost_log_setup.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B4172108911200A20CA1 /* libboost_log_setup.a */; };
+		24E6B41D2108911200A20CA1 /* libboost_log-mt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E6B4182108911200A20CA1 /* libboost_log-mt.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		246944FA2100B8B7009ABE34 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		24A0276C2107CBA6008F9B2A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		246944FC2100B8B7009ABE34 /* cross-monitor-cpp-xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cross-monitor-cpp-xcode"; sourceTree = BUILT_PRODUCTS_DIR; };
+		246945072100BA5A009ABE34 /* application_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = application_client.cpp; sourceTree = "<group>"; };
+		246945082100BA5A009ABE34 /* os_mac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = os_mac.cpp; sourceTree = "<group>"; };
+		246945092100BA5A009ABE34 /* os.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = os.hpp; sourceTree = "<group>"; };
+		2469450A2100BA5A009ABE34 /* application.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = application.hpp; sourceTree = "<group>"; };
+		246945122100BBD2009ABE34 /* data.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = data.hpp; sourceTree = "<group>"; };
+		246945132100BBD2009ABE34 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
+		246945142100BBD2009ABE34 /* utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = utils.hpp; sourceTree = "<group>"; };
+		246945152100BBD3009ABE34 /* log.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = log.hpp; sourceTree = "<group>"; };
+		246945162100BBD3009ABE34 /* os_mac.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = os_mac.cpp; sourceTree = "<group>"; };
+		246945172100BBD3009ABE34 /* os.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = os.hpp; sourceTree = "<group>"; };
+		246945182100BBD3009ABE34 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		2469451E21012E94009ABE34 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		246946692101F5F5009ABE34 /* libboost_program_options-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_program_options-mt.dylib"; path = "../../../../usr/local/lib/libboost_program_options-mt.dylib"; sourceTree = "<group>"; };
+		2469466B2101F628009ABE34 /* libboost_log-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_log-mt.a"; path = "../../../../usr/local/lib/libboost_log-mt.a"; sourceTree = "<group>"; };
+		2469466D2101FFC7009ABE34 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = ../../../../usr/local/Cellar/openssl/1.0.2o_2/lib/libssl.dylib; sourceTree = "<group>"; };
+		2469466F2101FFE6009ABE34 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = ../../../../usr/local/Cellar/openssl/1.0.2o_2/lib/libcrypto.dylib; sourceTree = "<group>"; };
+		2469467121020046009ABE34 /* libcpprest.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcpprest.dylib; path = ../../../../usr/local/lib/libcpprest.dylib; sourceTree = "<group>"; };
+		246946732102007C009ABE34 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../usr/local/lib/libboost_system.dylib; sourceTree = "<group>"; };
+		24A0274921074F1B008F9B2A /* libboost_unit_test_framework-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_unit_test_framework-mt.dylib"; path = "../../../../../usr/local/lib/libboost_unit_test_framework-mt.dylib"; sourceTree = "<group>"; };
+		24A0274B21074FB8008F9B2A /* libgmock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmock.a; path = ../../../../../usr/local/lib/libgmock.a; sourceTree = "<group>"; };
+		24A0274D21075472008F9B2A /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../usr/local/lib/libgtest.a; sourceTree = "<group>"; };
+		24A0274F210755A4008F9B2A /* libboost_log-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_log-mt.dylib"; path = "../../../../../usr/local/lib/libboost_log-mt.dylib"; sourceTree = "<group>"; };
+		24A027582107BED7008F9B2A /* libboost_unit_test_framework.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_unit_test_framework.dylib; path = ../../../../../usr/local/lib/libboost_unit_test_framework.dylib; sourceTree = "<group>"; };
+		24A0276E2107CBA6008F9B2A /* Tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tests; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A027702107CBA6008F9B2A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		24A027792107CEF1008F9B2A /* libboost_unit_test_framework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_unit_test_framework.a; path = ../../../../../usr/local/lib/libboost_unit_test_framework.a; sourceTree = "<group>"; };
+		24A0277B2107CEF6008F9B2A /* libboost_unit_test_framework-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_unit_test_framework-mt.a"; path = "../../../../../usr/local/lib/libboost_unit_test_framework-mt.a"; sourceTree = "<group>"; };
+		24E6B3FE210889F100A20CA1 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = ../../../../../usr/local/Cellar/openssl/1.0.2o_2/lib/libcrypto.dylib; sourceTree = "<group>"; };
+		24E6B40021088A4800A20CA1 /* libcpprest.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcpprest.dylib; path = ../../../../../usr/local/lib/libcpprest.dylib; sourceTree = "<group>"; };
+		24E6B40221088A9000A20CA1 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = ../../../../../usr/local/Cellar/openssl/1.0.2o_2/lib/libssl.dylib; sourceTree = "<group>"; };
+		24E6B40421088C6200A20CA1 /* libboost_program_options-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_program_options-mt.dylib"; path = "../../../../../usr/local/lib/libboost_program_options-mt.dylib"; sourceTree = "<group>"; };
+		24E6B40621088C8200A20CA1 /* libboost_system-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_system-mt.dylib"; path = "../../../../../usr/local/lib/libboost_system-mt.dylib"; sourceTree = "<group>"; };
+		24E6B40821088C8700A20CA1 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../usr/local/lib/libboost_system.dylib; sourceTree = "<group>"; };
+		24E6B40A21088CFC00A20CA1 /* libboost_log.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_log.dylib; path = ../../../../../usr/local/lib/libboost_log.dylib; sourceTree = "<group>"; };
+		24E6B40D2108902E00A20CA1 /* libssl.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.1.0.0.dylib; path = ../../../../../usr/local/Cellar/openssl/1.0.2o_2/lib/libssl.1.0.0.dylib; sourceTree = "<group>"; };
+		24E6B40F2108903400A20CA1 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.1.0.0.dylib; path = ../../../../../usr/local/Cellar/openssl/1.0.2o_2/lib/libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
+		24E6B411210890D100A20CA1 /* libboost_log.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_log.a; path = ../../../../../usr/local/lib/libboost_log.a; sourceTree = "<group>"; };
+		24E6B4142108911200A20CA1 /* libboost_log_setup-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_log_setup-mt.a"; path = "../../../../../usr/local/lib/libboost_log_setup-mt.a"; sourceTree = "<group>"; };
+		24E6B4152108911200A20CA1 /* libboost_log_setup-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_log_setup-mt.dylib"; path = "../../../../../usr/local/lib/libboost_log_setup-mt.dylib"; sourceTree = "<group>"; };
+		24E6B4162108911200A20CA1 /* libboost_log_setup.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_log_setup.dylib; path = ../../../../../usr/local/lib/libboost_log_setup.dylib; sourceTree = "<group>"; };
+		24E6B4172108911200A20CA1 /* libboost_log_setup.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_log_setup.a; path = ../../../../../usr/local/lib/libboost_log_setup.a; sourceTree = "<group>"; };
+		24E6B4182108911200A20CA1 /* libboost_log-mt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_log-mt.a"; path = "../../../../../usr/local/lib/libboost_log-mt.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		246944F92100B8B7009ABE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2469466A2101F5F5009ABE34 /* libboost_program_options-mt.dylib in Frameworks */,
+				246946702101FFE6009ABE34 /* libcrypto.dylib in Frameworks */,
+				2469467221020046009ABE34 /* libcpprest.dylib in Frameworks */,
+				2469466E2101FFC7009ABE34 /* libssl.dylib in Frameworks */,
+				24A02750210755A4008F9B2A /* libboost_log-mt.dylib in Frameworks */,
+				246946742102007D009ABE34 /* libboost_system.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24A0276B2107CBA6008F9B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E6B40521088C6300A20CA1 /* libboost_program_options-mt.dylib in Frameworks */,
+				24E6B40121088A4800A20CA1 /* libcpprest.dylib in Frameworks */,
+				24E6B4132108911200A20CA1 /* libboost_log.dylib in Frameworks */,
+				24E6B4192108911200A20CA1 /* libboost_log_setup-mt.a in Frameworks */,
+				24E6B41A2108911200A20CA1 /* libboost_log_setup-mt.dylib in Frameworks */,
+				24E6B41B2108911200A20CA1 /* libboost_log_setup.dylib in Frameworks */,
+				24E6B41C2108911200A20CA1 /* libboost_log_setup.a in Frameworks */,
+				24E6B41D2108911200A20CA1 /* libboost_log-mt.a in Frameworks */,
+				24E6B412210890D100A20CA1 /* libboost_log.a in Frameworks */,
+				24E6B40C21088D2500A20CA1 /* libboost_log-mt.dylib in Frameworks */,
+				24E6B40E2108902E00A20CA1 /* libssl.1.0.0.dylib in Frameworks */,
+				24E6B40321088A9000A20CA1 /* libssl.dylib in Frameworks */,
+				24E6B4102108903400A20CA1 /* libcrypto.1.0.0.dylib in Frameworks */,
+				24A027752107CC43008F9B2A /* libgtest.a in Frameworks */,
+				24A027762107CC47008F9B2A /* libgmock.a in Frameworks */,
+				24E6B40921088C8700A20CA1 /* libboost_system.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		246944F32100B8B7009ABE34 = {
+			isa = PBXGroup;
+			children = (
+				246946732102007C009ABE34 /* libboost_system.dylib */,
+				2469466F2101FFE6009ABE34 /* libcrypto.dylib */,
+				246946692101F5F5009ABE34 /* libboost_program_options-mt.dylib */,
+				2469466D2101FFC7009ABE34 /* libssl.dylib */,
+				2469466B2101F628009ABE34 /* libboost_log-mt.a */,
+				2469467121020046009ABE34 /* libcpprest.dylib */,
+				2469450F2100BAF6009ABE34 /* Shared */,
+				246944FE2100B8B7009ABE34 /* Client */,
+				24A0276F2107CBA6008F9B2A /* Tests */,
+				246944FD2100B8B7009ABE34 /* Products */,
+				24A0274821074F1A008F9B2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		246944FD2100B8B7009ABE34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				246944FC2100B8B7009ABE34 /* cross-monitor-cpp-xcode */,
+				24A0276E2107CBA6008F9B2A /* Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		246944FE2100B8B7009ABE34 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				2469451E21012E94009ABE34 /* main.cpp */,
+				246945072100BA5A009ABE34 /* application_client.cpp */,
+				2469450A2100BA5A009ABE34 /* application.hpp */,
+				246945082100BA5A009ABE34 /* os_mac.cpp */,
+				246945092100BA5A009ABE34 /* os.hpp */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		2469450F2100BAF6009ABE34 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				246945122100BBD2009ABE34 /* data.hpp */,
+				246945132100BBD2009ABE34 /* log.cpp */,
+				246945152100BBD3009ABE34 /* log.hpp */,
+				246945162100BBD3009ABE34 /* os_mac.cpp */,
+				246945172100BBD3009ABE34 /* os.hpp */,
+				246945182100BBD3009ABE34 /* utils.cpp */,
+				246945142100BBD2009ABE34 /* utils.hpp */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		24A0274821074F1A008F9B2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24E6B4142108911200A20CA1 /* libboost_log_setup-mt.a */,
+				24E6B4152108911200A20CA1 /* libboost_log_setup-mt.dylib */,
+				24E6B4172108911200A20CA1 /* libboost_log_setup.a */,
+				24E6B4162108911200A20CA1 /* libboost_log_setup.dylib */,
+				24E6B4182108911200A20CA1 /* libboost_log-mt.a */,
+				24E6B411210890D100A20CA1 /* libboost_log.a */,
+				24E6B40F2108903400A20CA1 /* libcrypto.1.0.0.dylib */,
+				24E6B40D2108902E00A20CA1 /* libssl.1.0.0.dylib */,
+				24E6B40A21088CFC00A20CA1 /* libboost_log.dylib */,
+				24E6B40821088C8700A20CA1 /* libboost_system.dylib */,
+				24E6B40621088C8200A20CA1 /* libboost_system-mt.dylib */,
+				24E6B40421088C6200A20CA1 /* libboost_program_options-mt.dylib */,
+				24E6B40221088A9000A20CA1 /* libssl.dylib */,
+				24E6B40021088A4800A20CA1 /* libcpprest.dylib */,
+				24E6B3FE210889F100A20CA1 /* libcrypto.dylib */,
+				24A0277B2107CEF6008F9B2A /* libboost_unit_test_framework-mt.a */,
+				24A027792107CEF1008F9B2A /* libboost_unit_test_framework.a */,
+				24A027582107BED7008F9B2A /* libboost_unit_test_framework.dylib */,
+				24A0274F210755A4008F9B2A /* libboost_log-mt.dylib */,
+				24A0274D21075472008F9B2A /* libgtest.a */,
+				24A0274B21074FB8008F9B2A /* libgmock.a */,
+				24A0274921074F1B008F9B2A /* libboost_unit_test_framework-mt.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24A0276F2107CBA6008F9B2A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				24A027702107CBA6008F9B2A /* main.cpp */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		246944FB2100B8B7009ABE34 /* cross-monitor-cpp-xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246945032100B8B7009ABE34 /* Build configuration list for PBXNativeTarget "cross-monitor-cpp-xcode" */;
+			buildPhases = (
+				246944F82100B8B7009ABE34 /* Sources */,
+				246944F92100B8B7009ABE34 /* Frameworks */,
+				246944FA2100B8B7009ABE34 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cross-monitor-cpp-xcode";
+			productName = "cross-monitor-cpp2";
+			productReference = 246944FC2100B8B7009ABE34 /* cross-monitor-cpp-xcode */;
+			productType = "com.apple.product-type.tool";
+		};
+		24A0276D2107CBA6008F9B2A /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24A027722107CBA6008F9B2A /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				24A0276A2107CBA6008F9B2A /* Sources */,
+				24A0276B2107CBA6008F9B2A /* Frameworks */,
+				24A0276C2107CBA6008F9B2A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 24A0276E2107CBA6008F9B2A /* Tests */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		246944F42100B8B7009ABE34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Khurram  Shahzad";
+				TargetAttributes = {
+					246944FB2100B8B7009ABE34 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					24A0276D2107CBA6008F9B2A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 246944F72100B8B7009ABE34 /* Build configuration list for PBXProject "cross-monitor-cpp-xcode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 246944F32100B8B7009ABE34;
+			productRefGroup = 246944FD2100B8B7009ABE34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				246944FB2100B8B7009ABE34 /* cross-monitor-cpp-xcode */,
+				24A0276D2107CBA6008F9B2A /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		246944F82100B8B7009ABE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2469451A2100BBD3009ABE34 /* log.cpp in Sources */,
+				2469451B2100BBD3009ABE34 /* os_mac.cpp in Sources */,
+				2469451C2100BBD3009ABE34 /* utils.cpp in Sources */,
+				2469450E2100BA5B009ABE34 /* os_mac.cpp in Sources */,
+				2469451F21012E95009ABE34 /* main.cpp in Sources */,
+				2469450D2100BA5B009ABE34 /* application_client.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24A0276A2107CBA6008F9B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E6B3F22108801200A20CA1 /* data.hpp in Sources */,
+				24E6B3F32108801200A20CA1 /* log.cpp in Sources */,
+				24E6B3F42108801200A20CA1 /* log.hpp in Sources */,
+				24E6B3F52108801200A20CA1 /* os_mac.cpp in Sources */,
+				24E6B3F62108801200A20CA1 /* os.hpp in Sources */,
+				24E6B3F72108801200A20CA1 /* utils.cpp in Sources */,
+				24E6B3F82108801200A20CA1 /* utils.hpp in Sources */,
+				24E6B3FA2108801200A20CA1 /* application_client.cpp in Sources */,
+				24E6B3FB2108801200A20CA1 /* application.hpp in Sources */,
+				24E6B3FC2108801200A20CA1 /* os_mac.cpp in Sources */,
+				24E6B3FD2108801200A20CA1 /* os.hpp in Sources */,
+				24A027712107CBA6008F9B2A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		246945012100B8B7009ABE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		246945022100B8B7009ABE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		246945042100B8B7009ABE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/opt/openssl/lib,
+					/usr/local/Cellar/openssl/1.0.2o_2/lib,
+					"$(PROJECT_DIR)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DBOOST_ALL_DYN_LINK",
+					"-lpthread",
+					"-lboost_log-mt",
+					"-lboost_program_options-mt",
+					"$(OTHER_CFLAGS)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		246945052100B8B7009ABE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/opt/openssl/lib,
+					/usr/local/Cellar/openssl/1.0.2o_2/lib,
+					"$(PROJECT_DIR)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DBOOST_ALL_DYN_LINK",
+					"-lpthread",
+					"-lboost_log-mt",
+					"-lboost_program_options-mt",
+					"$(OTHER_CFLAGS)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		24A027732107CBA6008F9B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/opt/openssl/include,
+					/usr/local/Cellar/openssl/1.0.2o_2/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DBOOST_ALL_DYN_LINK",
+					"-lpthread",
+					"-lboost_log-mt",
+					"-lboost_program_options-mt",
+					"$(OTHER_CFLAGS)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24A027742107CBA6008F9B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/opt/openssl/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/opt/openssl/include,
+					/usr/local/Cellar/openssl/1.0.2o_2/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DBOOST_ALL_DYN_LINK",
+					"-lpthread",
+					"-lboost_log-mt",
+					"-lboost_program_options-mt",
+					"$(OTHER_CFLAGS)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		246944F72100B8B7009ABE34 /* Build configuration list for PBXProject "cross-monitor-cpp-xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246945012100B8B7009ABE34 /* Debug */,
+				246945022100B8B7009ABE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246945032100B8B7009ABE34 /* Build configuration list for PBXNativeTarget "cross-monitor-cpp-xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246945042100B8B7009ABE34 /* Debug */,
+				246945052100B8B7009ABE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24A027722107CBA6008F9B2A /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24A027732107CBA6008F9B2A /* Debug */,
+				24A027742107CBA6008F9B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 246944F42100B8B7009ABE34 /* Project object */;
+}
